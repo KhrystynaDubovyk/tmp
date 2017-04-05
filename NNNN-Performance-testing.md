@@ -22,6 +22,14 @@ By implelenting proposed solution new types of testing become available:
 A new feature of ATF is proposed: possibility to send multiple requests at mobile connection in parallel.
 Processing duration of each request has to be measured as well as total duration.
 
+Example:
+1. Create mobile connection
+2. Register one application
+3. Send 100 requests (any RPC), with payload size = 1 kB
+4. Check average processing time (duration)
+5. Do steps 3,4 for payload size = 10 kB
+6. Compare results
+
 ## Potential downsides
 
 No potential downsides are observed
