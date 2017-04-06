@@ -19,7 +19,7 @@ By implelenting proposed solution new types of testing become available:
 
 ## Proposed solution
 
-A new feature of ATF is proposed: possibility to send multiple requests at mobile connection in parallel.
+A new feature of ATF is to have possibility to send multiple requests at mobile connection in parallel.
 Processing duration of each request has to be measured as well as total duration.
 
 Example:
