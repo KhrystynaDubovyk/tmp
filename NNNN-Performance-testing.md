@@ -40,5 +40,5 @@ Existing code won't be affected
 
 ## Alternatives considered
 
-Alternative approaches are not considered
+Using of alternative approaches (JMeter, Tsung etc.) was not considered due to impossibility to adopt them for ATF
 
