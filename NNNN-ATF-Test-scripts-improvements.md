@@ -8,26 +8,25 @@
 ## Introduction
  
 ## Motivation
-Quality of SDL needs to be improved. In order to make this happen number of automated scripts needs to be increased significantly.
-Ideally to have complete test sets for the whole SDL functionality.
+Quality of SDL needs to be improved. In order to make this happen number of automated scripts needs to be increased significantly. Ideally to have complete test set for the whole SDL functionality.
 
 ## Proposed solution
-Existing 'user_modules' has to be refactored and all functions have to be split into two groups Utils and Common sequences.
+Split all functions in existing 'user_modules' into two groups Utils and Common sequences.
 
-All existing test scripts have to be updated in order to follow template and new structure of 'user_modules'.
-New scripts has to follow template.
+Update all existing test scripts according to template and new structure of 'user_modules'.
+Create new scripts according to template.
 
-All scripts have to be kept in up-to-date state and maintained continuously.
+Maintain continuously all scripts in up-to-date state.
 
-All scripts have to be run as frequently as possible. Using of CI will help to automate this process.
+Run all scripts as frequently as possible. Usage of CI will help to automate this process.
 
 ## Detailed design
 
 ### Script template
 Already implemented for Remote Control functionalty.
 
-### Refactoring of 'user_modules'
-Existing functions have to be split into two groups:
+### Changes of 'user_modules'
+Split existing functions into two groups:
 1. Utils
 These are general helpers, ex.:
 - file and database accessors
@@ -43,8 +42,8 @@ These are commonly used sequences of actions, ex.::
 - etc.
 
 ### Updating of existing scrips
-Existing scripts needs to be updated in order to follow template and new structure.
-Can be done step by step depending on priority.
+Update existing scripts according to template and new structure.
+This can be done step by step depending on priority.
 
 ## Impact on existing code
 Huge impact on existing automated test scripts.
