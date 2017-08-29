@@ -27,7 +27,8 @@ One of the option can be path to SDL binaries. Example:
 A connectivity test module `./modules/connecttest.lua` provides the following:
  - connection to Mobile and HMI SDL channels 
  - a set of methods to send reqests/notifications and to register expectations on these channels
- - a methods to start and stop services
+ - methods to start and stop services
+ - methods to start and stop streaming
 
 ### Test Script
 Test script is just a Lua program. Usualy it consists of a set of Test Steps. 
@@ -85,7 +86,14 @@ In order to start or stop service following functions are used:
 - StopService
 
 ## Media streaming
+ATF allows to start media streaming in background. Use `mobileSession:StartStreaming(service, filename, bandwidth)` to start media streaming. Optional `bandwidth` argument sets maximum bandwidth of streaming (bytes per second). Default is 30 kbps. Note that the service should be started before StartStreaming is called.
+Example:
+```
+self.mobileSession:StartService(10)
+:Do(function() self.mobileSession:StartStreaming(10, "video.mpg", 30 * 1024)
+```
+To stop file streaming, call `StopStreaming(filename)`.
 
 ## Auxiliary functions
 
-## Reporting and Logging
+## Reports and Logs
