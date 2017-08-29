@@ -92,8 +92,18 @@ Example:
 self.mobileSession:StartService(10)
 :Do(function() self.mobileSession:StartStreaming(10, "video.mpg", 30 * 1024)
 ```
-To stop file streaming, call `StopStreaming(filename)`.
+To stop file streaming, call `StopStreaming(filename)`
 
 ## Auxiliary functions
+- RAISE_EVENT
+- RUN_AFTER
+  Use RUN AFTER routine to postpone function execution.
+Usage: RUN AFTER(function, timeout). The function will be called in timeout
+msec.
 
 ## Reports and Logs
+- Console
+- TestingReports
+  - ATFLogs
+  - SDLLogs
+  - XMLLogs
