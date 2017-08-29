@@ -87,3 +87,5 @@ In order to start or stop service following functions are used:
 ## Media streaming
 
 ## Auxiliary functions
+
+## Reporting and Logging
