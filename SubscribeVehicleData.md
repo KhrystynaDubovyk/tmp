@@ -1,25 +1,21 @@
 # SDL Subscription states
 
-Affected RPCs: SubscribeVehicleData/UnsubscribeVehicleData, SubscribeWayPoints/UnsubscribeWayPoints
-
-Subscription/unsubscription can be extended by some argument
-
-## Subscribe
+## SubscribeVehicleData
 
 Not subscribed ---> Subscribed
 
 | | Use case 1 | Use case 2 | Use case 3 |
 |---|---|---|---|
 **Start state** | Not subscribed | Subscribed (P1) | Subscribed (P1) |
-**Input** | To subscribe (P1) | To subscribe (P1) | To subscribe (P2) |
+**Input** | SubscribeVehicleData (P1) | SubscribeVehicleData (P1) | SubscribeVehicleData (P2) |
 **Finish state** | Subscribed (P1) | Subscribed (P1) | Subscribed (P1, P2) | 
 
-## Unsubscribe
+## UnsubscribeVehicleData
 
 Subscribed ---> Not subscribed 
 
 | | Use case 1 | Use case 2 | Use case 3 |
 |---|---|---|---|
 **Start state** | Subscribed (P1) | Not subscribed | Subscribed (P1, P2) |
-**Input** | To unsubscribe (P1) | To unsubscribe (P1) | To unsubscribe (P1) |
+**Input** | UnsubscribeVehicleData (P1) | UnsubscribeVehicleData (P1) | UnsubscribeVehicleData (P1) |
 **Finish state** | Not subscribed | Not subscribed | Subscribed (P2) | 
