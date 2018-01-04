@@ -1,4 +1,4 @@
-# SubscribeVehicleData/UnsubscribeVehicleData states
+# SDL states for SubscribeVehicleData/UnsubscribeVehicleData APIs
 
 ## SubscribeVehicleData
 
