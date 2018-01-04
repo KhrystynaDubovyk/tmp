@@ -1,4 +1,4 @@
-# SDL Subscription states
+# SubscribeVehicleData/UnsubscribeVehicleData states
 
 ## SubscribeVehicleData
 
