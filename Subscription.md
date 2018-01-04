@@ -1,6 +1,8 @@
 # SDL Subscription states
 
-Affected RPCs: SubscribeVehicleData, SubscribeWayPoints
+Affected RPCs: SubscribeVehicleData/UnsubscribeVehicleData, SubscribeWayPoints/UnsubscribeWayPoints
+
+Subscription/unsubscription can be extended by some argument
 
 ## Subscribe
 
