@@ -2,7 +2,7 @@
 
 ## SubscribeVehicleData
 
-Not subscribed ---> Subscribed
+![Subscribe](/Subscribe.png)
 
 | | Use case 1 | Use case 2 | Use case 3 |
 |---|---|---|---|
@@ -12,7 +12,7 @@ Not subscribed ---> Subscribed
 
 ## UnsubscribeVehicleData
 
-Subscribed ---> Not subscribed 
+![Unsubscribe](/Unsubscribe.png)
 
 | | Use case 1 | Use case 2 | Use case 3 |
 |---|---|---|---|
